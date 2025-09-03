@@ -1,0 +1,84 @@
+/*
+    Here, are all the style for header content
+*/
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+
+.navigationBar{
+    display: flex;
+    justify-content: center;
+}
+
+.navcontainer{
+    /* background-color: grey; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 149, 30);
+    width: 99%;
+    border-radius: 1em;
+    /* padding: 5px 0; */
+    
+}
+
+.nameTag{
+    font-size: 2rem;
+    margin-left: 1rem;
+      font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.navSection{
+   
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 10vh;
+    /* width: 99vw; */
+    gap: 20px;
+    border-radius: 10px;
+    margin-right: 1rem;
+    
+}
+
+.navSection li{
+    list-style: none;
+    position: relative;
+    z-index: 1;
+    transition: color 400ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.navlink{
+    font-size: 1.25rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(240, 149, 30);
+    width: 100%;
+    height: 100%;
+    padding: 1em 1em;
+    position: relative;
+}
+
+.navSection li a::before{
+    content: "";
+    background-color: rgb(236, 205, 165);
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 5%;
+    left: 0;
+    z-index: -1;
+    transition: width 200ms ease-in-out;
+}
+
+.navSection li a:hover::before{
+    width: 100%;
+}
+
+.navSection li:hover{
+    color: rgb(52, 51, 51);
+    transform: translateY(-2px);
+    
+}
